@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="contact-header">
+        <div class="container">
+            <nav>
+                <div class="logo"><h1>TERRA</h1></div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="services.html">Servizi</a></li>
+                    <li><a href="contact.html">Contattaci</a></li>
+                </ul> 
+                <div class="menu-btn"><img src="./img/menu.svg" alt=""></div>   
+            </nav>
+
+            <div class="header-content">
+                <h1>CONTATTA IL TEAM</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="container">
+        <form action="#">
+            <h1>Contattaci</h1>
+            <div class="inputsWrappers">
+                <input type="text" placeholder="Il Tuo Nome">
+                <input type="text" placeholder="Telefono">
+                <input type="email" name="" id="" placeholder="Email">
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <button class="primary-btn">MANDA MESSAGGIO</button>
+            </div>
+        </form>
+        <div class="addresss">
+            <h1>Comunica al Team</h1>
+            
+            <div class="detailsWrapper">
+                <div class="details">
+                    <img src="./img/email.png" alt="">
+                    <div class="text">
+                        <h6>EMAIL</h6>
+                        <p>esempioemail@gmail.com</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <img src="./img/phone.png" alt="">
+                    <div class="text">
+                        <h6>NUMERO DI TELEFONO</h6>
+                        <p>+39 000 000 0000</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <img src="./img/location.png" alt="">
+                    <div class="text">
+                        <h6>INDIRIZZO</h6>
+                        <p>2727 Ocean Nature, <br>
+                            Caltagirone, CT, 95041
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="followUsWrapper">
+                <h3>Seguici</h3>
+                <ul class="socialLink">
+                    <li>
+                        <a href=""> <img src="./img/facebook.png"></a>
+                    </li>
+                    <li>
+                        <a href=""> <img src="./img/linkedin.png"></a>
+                    </li>
+                    <li>
+                        <a href=""> <img src="./img/video.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footerlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Chi Siamo</a></li>
+            <li><a href="services.html">Servizi</a></li>
+            <li><a href="contact.html">Contattaci</a></li>  
+        </ul>
+        <h1 class="logo">TERRA</h1>
+        <p>©2025 Terra. All right reserved</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

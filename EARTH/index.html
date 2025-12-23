@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><h1>TERRA</h1></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="services.html">Servizi</a></li>
+                    <li><a href="contact.html">Contattaci</a></li>
+                </ul> 
+                <div class="menu-btn"><img src="./img/menu.svg" alt="Menu mobile"></div>  
+            </nav>
+            <div class="header-content">
+                <h1>TERRA</h1>
+                <p>POTENZIALE INFINITO</p>
+                <a href="services.html" class="primary-btn">ESPLORA</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <div class="service">
+            <img src="./img/service-1.png" alt="Addestramento survival in bosco"/>
+            <h1>Addestramento</h1>
+            <p>Dormire sotto le stelle, svegliarsi con l'odore del bosco e zero notifiche. Solo tu, lo zaino e la natura che non fa sconti. Un'esperienza vera, essenziale, che ti rimette a terra. Letteralmente.</p>
+        </div>
+        <div class="service">
+            <img src="./img/service-2.png" alt="Trekking campeggio in montagna"/>
+            <h1>Campeggio</h1>
+            <p>Salita dura, panorama che ripaga tutto. Percorsi di montagna pensati per chi non si accontenta della passeggiata domenicale. Fatica, adrenalina e aria pulita. Qui non si monta niente, si conquista.</p>
+        </div>
+        <div class="service">
+            <img src="./img/service-3.png" alt="Attività outdoor team building"/>
+            <h1>Outdoor</h1>
+            <p>Attività pensate per chi ha voglia di uscire dalla comfort zone e smettere di guardare la vita dal divano. Percorsi guidati, sfide reali e zero esperienze preconfezionate. Qui si viene per sporcarsi, sudare e tornare a casa con qualcosa da raccontare.</p>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="about-content">
+            <h1>Chi Siamo</h1>
+            <p>Siamo un team di persone che preferisce le scarpe sporche alle scrivanie lucide. Organizziamo esperienze outdoor per chi vuole staccare dalla routine e rimettersi in movimento, sul serio.</p>
+        </div>
+        <div class="about-image">
+            <img src="./img/about.png" alt="Team Terra durante escursione">
+        </div>
+    </section>
+
+    <section id="talk-to-us">
+        <div class="talk-to-us-content">
+            <h1>PARLA CON IL TEAM</h1>
+            <p>Hai una domanda, un'idea o semplicemente voglia di partire? Scrivici. Rispondiamo davvero, non è un form che finisce nel vuoto cosmico.</p>
+            <a href="contact.html"><button class="primary-btn">CONTATTACI</button></a>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footerlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Chi Siamo</a></li>
+            <li><a href="services.html">Servizi</a></li>
+            <li><a href="contact.html">Contattaci</a></li>  
+        </ul>
+        <h1 class="logo">TERRA</h1>
+        <p>©2025 Terra. All rights reserved</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

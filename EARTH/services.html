@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi - Terra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><h1>TERRA</h1></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="services.html">Servizi</a></li>
+                    <li><a href="contact.html">Contattaci</a></li>
+                </ul> 
+                <div class="menu-btn"><img src="./img/menu.svg" alt="Menu mobile"></div>  
+            </nav>
+            <div class="header-content">
+                <h1>SERVIZI</h1>
+                <p>Esperienze complete</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <div class="service">
+            <img src="./img/service-1.png" alt="Addestramento survival bosco"/>
+            <h1>Addestramento Survival</h1>
+            <p>3 giorni full immersion: montaggio campo, orientamento stelle, primo soccorso, accensione fuoco senza accendini. Pernottamento tenda. Impari a sopravvivere 72h senza tecnologia. Per singoli e team aziendali.</p>
+        </div>
+        <div class="service">
+            <img src="./img/service-2.png" alt="Trekking campeggio montagna"/>
+            <h1>Trekking & Campeggio</h1>
+            <p>Percorsi 2-5 giorni Appennino: salite tecniche D+1000m, single track, bivacco selvaggio. Kit fornito: sacco a pelo, stove, mappe topografiche. Da principianti (8km/giorno) a esperti (25km/giorno).</p>
+        </div>
+        <div class="service">
+            <img src="./img/service-3.png" alt="Team building outdoor"/>
+            <h1>Outdoor Team Building</h1>
+            <p>Orienteering GPS, tree climbing, rafting fiume, laser tag boschivo. 1-2 giorni per aziende: leadership, coesione, problem solving. Adattabile 8-50 persone. Debriefing finale con certificati.</p>
+        </div>
+    </section>
+
+    <section id="talk-to-us">
+        <div class="talk-to-us-content">
+            <h1>QUAL È LA TUA SFIDA?</h1>
+            <p>Scegli il servizio o contattaci per personalizzazione.</p>
+            <a href="contact.html"><button class="primary-btn">INIZIA ORA</button></a>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footerlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Chi Siamo</a></li>
+            <li><a href="services.html">Servizi</a></li>
+            <li><a href="contact.html">Contattaci</a></li>  
+        </ul>
+        <h1 class="logo">TERRA</h1>
+        <p>©2025 Terra. All right reserved</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

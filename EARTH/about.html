@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Siamo - Terra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><h1>TERRA</h1></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Chi Siamo</a></li>
+                    <li><a href="services.html">Servizi</a></li>
+                    <li><a href="contact.html">Contattaci</a></li>
+                </ul> 
+                <div class="menu-btn"><img src="./img/menu.svg" alt="Menu mobile"></div>  
+            </nav>
+            <div class="header-content">
+                <h1>CHI SIAMO</h1>
+                <p>Radici nella natura</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="about-content">
+            <h1>La Nostra Storia</h1>
+            <p>Siamo guide nate tra gli Appennini emiliani e le Madonie siciliane. Da 12 anni portiamo persone vere in esperienze outdoor autentiche: zero comfort, 100% natura. Preferiamo le tende infangate alle sale riunioni, i sentieri tecnici ai divani.</p>
+            <p>Organizziamo addestramento survival, trekking estremi e team building per aziende e privati. Ogni attività segue il principio "leave no trace": entri leggero, esci senza lasciare segni. Operiamo in tutta Italia centrale e meridionale.</p>
+        </div>
+        <div class="about-image">
+            <img src="./img/about.png" alt="Team Terra in escursione">
+        </div>
+    </section>
+
+    <section id="values" class="container">
+        <h1>I Nostri Valori</h1>
+        <div id="services">
+            <div class="service">
+                <h1>Autenticità</h1>
+                <p>Zero filtri, zero esperienze preconfezionate. Solo natura reale e fatica vera.</p>
+            </div>
+            <div class="service">
+                <h1>Resilienza</h1>
+                <p>Impari a superare i tuoi limiti, un passo alla volta, sotto la pioggia o il sole.</p>
+            </div>
+            <div class="service">
+                <h1>Sostenibilità</h1>
+                <p>Rispetto totale per l'ambiente. Prendi solo foto, lascia solo impronte.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="talk-to-us">
+        <div class="talk-to-us-content">
+            <h1>PRONTO PER L'AVVENTURA?</h1>
+            <p>Scopri i nostri servizi o scrivici per un piano personalizzato.</p>
+            <a href="services.html"><button class="primary-btn">SERVIZI</button></a>
+            <a href="contact.html"><button class="primary-btn">CONTATTACI</button></a>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footerlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Chi Siamo</a></li>
+            <li><a href="services.html">Servizi</a></li>
+            <li><a href="contact.html">Contattaci</a></li>  
+        </ul>
+        <h1 class="logo">TERRA</h1>
+        <p>©2025 Terra. All right reserved</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
